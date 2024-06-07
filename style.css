@@ -20,10 +20,14 @@
   @media (max-width: 600px) {
     .contenedor {
       max-width: 100%;
-      margin: 0 15%;
+      margin: 0 0;
      }
   }
   
+  header {
+    max-width: 100%;
+    height: 200px;
+  }
   
   .navbar {
     display: flex;
@@ -107,14 +111,28 @@
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-  
   }
   
   .images-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
+
+  .images-container a {
+    display: flex;
+    flex-basis: calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+  }
+
+  .images-container a img {
+    max-width: 80px;
+    height: auto;
+  }
+
+ 
   
   
   .images-container a:hover img {
@@ -347,17 +365,19 @@
   }
   
   footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 40vw;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 100px
+    max-width: 100%;
+    height: 200px;
+    position: relative;
   }
+
+  #futer {
+    max-width: 100%;
+    height: auto;
+  }
+
   
   #irArriba {
+    position: absolute;
     background-image: url('https://img.icons8.com/?size=100&id=122841&format=png&color=000000');
     background-size: cover;
     background-position: center;
@@ -365,8 +385,10 @@
     background-color: none;
     text-indent: -9999px;
     transition: transform 0.3s ease;
-    right: 15%;
-    bottom: 15%;
+    right: 5%;
+    bottom: 10%;
+    height: 5vh;
+    width: 5vw;
   }
   
   #irArriba:hover {
@@ -375,4 +397,9 @@
   }
   
   
-  
+  .linea-divisoria {
+    border: none; 
+    border-top: 2px solid #ccc; 
+    margin: 70px 70px; 
+    max-width: 100%;
+  }
