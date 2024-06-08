@@ -123,22 +123,69 @@
 
   .images-container a {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-basis: calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);
   }
 
   .images-container a img {
-    max-width: 80px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #git img {
+    width: 50%;
+    height: auto;
+  }
+
+  #java img {
+    width: 50%;
     height: auto;
   }
 
  
-  
+  #mariadb img {
+    width: 60%;
+    height: auto;
+  }
+
+  #mysql img {
+    width: 30%;
+    height: auto;
+  }
+
+  #postman img {
+    width: 50%;
+    height: auto;
+  }
+
+  #spring img {
+    width: 50%;
+    height: auto;
+  }
+
+  #html img {
+    width: 30%;
+    height: auto;
+  }
+
+  #css img {
+    width: 30%;
+    height: auto;
+  }
+
+  #javascript img {
+    width: 30%;
+    height: auto;
+  }
   
   .images-container a:hover img {
-    transform: translate(5px, -5px);
-    transition: transform 0.3s ease;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.5s ease;
   }
+  
   
   .projects{
     display: flex;
@@ -180,9 +227,9 @@
   }
   
   .proyecto img:hover {
-    
-    transition: transform 0.3s ease;
-    transform: scale(1,1);
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.5s ease;
   }
   
   
@@ -195,16 +242,21 @@
   }
   
   .idiomas {
-    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .idiomas img {
-    max-width: 15%;
+    max-width: 30%;
     height: auto;
-    margin-top: 15%;
+    margin-top: 5%;
   }
-  
+
   .idiomas img:hover {
-    transform: scale(1,1);
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.5s ease;
   }
   
   
@@ -288,8 +340,9 @@
   }
   
   #linkedin:hover {
-    transform: translate(5px, -5px);
-    transition: transform 0.3s ease;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.5s ease;
   }
   
   
@@ -306,8 +359,9 @@
   }
   
   #github:hover {
-    transform: translate(5px, -5px);
-    transition: transform 0.3s ease;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.5s ease;
   }
   
   
@@ -326,8 +380,9 @@
   }
   
   #contacto:hover {
-    transform: translate(5px, -5px);
-    transition: transform 0.3s ease;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.5s ease;
   }
   
   form {
@@ -370,9 +425,14 @@
     position: relative;
   }
 
-  #futer {
-    max-width: 100%;
-    height: auto;
+  footer nav {
+    position: absolute;
+    border: 3px transparent;
+    width: 40px;
+    height: 40px;
+    right: 4%;
+    bottom: 5%;
+    
   }
 
   
@@ -385,15 +445,15 @@
     background-color: none;
     text-indent: -9999px;
     transition: transform 0.3s ease;
-    right: 5%;
-    bottom: 10%;
-    height: 5vh;
-    width: 5vw;
+    width: 100%;
+    height: 100%;
+    
   }
   
   #irArriba:hover {
-    transform: scale(1,1);
-    
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.5s ease;
   }
   
   
