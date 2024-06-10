@@ -1,5 +1,5 @@
   *{
-      background-color: #252833;
+      background-color: #181a21;
       scroll-behavior: smooth;
       color-scheme: dark !important;
     }
@@ -113,7 +113,9 @@
     
     
     .presentation h1 {
-      color: rgb(58, 134, 51)
+      color: rgb(0, 255, 0);
+      filter: brightness(150%);
+      filter: saturate(150%);
     }
     
     @media (max-width: 600px) {
@@ -125,7 +127,7 @@
     
     
     h1, h3, h4 {
-      color: rgb(58, 134, 51);
+      color: rgb(0, 255, 0);
       padding: 10px;
       text-align: center;
       font-family: monospace;
@@ -274,7 +276,7 @@
     
     
     .desc{
-      color: rgb(58, 134, 51);
+      color: rgb(0, 255, 0);
       font-size: medium;
       font-family: monospace;
       max-width: 100%;
@@ -489,6 +491,7 @@
     justify-content: center;
     opacity: 0;
     font-family: monospace;
+    color: rgb(0, 255, 0);
     }
     
     #irArriba {

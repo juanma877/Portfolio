@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener("scroll", function() {
     var logo = document.getElementById("logo");
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > 300) {
+    if (scrollTop > 400) {
         logo.style.opacity = "1";
     } else {
         logo.style.opacity = "0";
