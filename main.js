@@ -18,3 +18,15 @@ document.addEventListener('DOMContentLoaded', function() {
         arr.style.opacity = '0';
 });
 });
+
+
+
+window.addEventListener("scroll", function() {
+    var logo = document.getElementById("logo");
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > 300) {
+        logo.style.opacity = "1";
+    } else {
+        logo.style.opacity = "0";
+    }
+});
