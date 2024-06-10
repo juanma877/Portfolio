@@ -63,7 +63,7 @@
     
     
     #logo img{
-      width: 100%;
+      width: auto;
       height: 30vh;
       justify-content: start;
       align-items: start;
@@ -461,8 +461,9 @@
     
     footer{
       max-width: 100%;
-      height: 200px;
+      height: 20vh;
       position: relative;
+      
     }
 
     footer nav {
