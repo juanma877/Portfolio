@@ -1,12 +1,20 @@
-document.getElementById('irArriba').addEventListener('click', scrollUp);
+document.getElementById('irArriba').addEventListener('click', scrollTo);
 
-function scrollUp(){
-    var currentScroll = document.documentElement.scrollTop;
-    if (currentScroll > 0){
-        window.requestAnimationFrame(scrollUp);
-        window.scrollTo (0, currentScroll - currentScroll / 3);
-    }
-}
+function scrollTo(){
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    });
+};
 
-irArriba = document.getElementById('irArriba');
+document.addEventListener('DOMContentLoaded', function() {
+    const irArriba = document.getElementById('irArriba');
+    const arr = document.getElementById('arr');
+    irArriba.addEventListener('mouseover', function() {
+        arr.style.opacity = '1';
 
+    });
+    irArriba.addEventListener('mouseout', function() {
+        arr.style.opacity = '0';
+});
+});
