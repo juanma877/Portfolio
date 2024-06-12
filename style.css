@@ -15,6 +15,7 @@
       margin: 0 25%; 
       padding: 0 0%; 
       box-sizing: border-box; 
+      padding-top: 25px;
     }
     
     @media (max-width: 600px) {
