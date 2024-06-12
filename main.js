@@ -13,13 +13,17 @@ function scrollTo(){
 document.addEventListener('DOMContentLoaded', function() {
     const irArriba = document.getElementById('irArriba');
     const arr = document.getElementById('arr');
+    if(window.innerWidth > 600){
     irArriba.addEventListener('mouseover', function() {
         arr.style.opacity = '1';
-
     });
     irArriba.addEventListener('mouseout', function() {
         arr.style.opacity = '0';
 });
+    
+    }else{
+        arr.style.opacity = '0'
+    }
 });
 
 
@@ -27,13 +31,25 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener("scroll", function() {
     var logo = document.getElementById("logo");
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > 400) {
+    if (scrollTop > 350) {
         logo.style.opacity = "1";
     } else {
         logo.style.opacity = "0";
     }
 });
 
+
+window.addEventListener("scroll", function() {
+    var logo = document.getElementById("logo");
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if(window.innerWidth <= 600){
+    if (scrollTop > 280) {
+        logo.style.opacity = "0.3";
+    } else {
+        logo.style.opacity = "0";
+    }
+}
+});
 
 // Validaciones del formulario
 nombre = document.querySelector("#nombre");
